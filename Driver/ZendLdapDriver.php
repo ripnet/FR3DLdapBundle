@@ -3,11 +3,11 @@
 namespace FR3D\LdapBundle\Driver;
 
 use FR3D\LdapBundle\Model\LdapUserInterface;
-use Symfony\Component\HttpKernel\Log\LoggerInterface;
+//use Symfony\Component\HttpKernel\Log\LoggerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Zend\Ldap\Exception\LdapException as ZendLdapException;
 use Zend\Ldap\Ldap;
-
+use Symfony\Bridge\Monolog as LoggerInterface;
 /**
  * This class adapt ldap calls to Zend Framework Ldap library functions.
  * Also prevent information disclosure catching Zend Ldap Exceptions and passing
